@@ -1,24 +1,19 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Hello from './Hello';
+import Day from './Day';
 import './style.css';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      name: 'React'
+      blocks: []
     };
   }
 
   render() {
     return (
-      <div>
-        <Hello name={this.state.name} />
-        <p>
-          Start editing to see some magic happen :)
-        </p>
-      </div>
+      <Day blocks={this.state.blocks}/>
     );
   }
 }
