@@ -7,13 +7,19 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      blocks: []
+      blocks: [{name:"Item 1",start:7.75,end:8.5},
+               {name:"Item 2",start:8.75,end:9.5}]
     };
   }
 
   render() {
     return (
-      <Day title={'Monday'} blocks={this.state.blocks}/>
+      <Day title={'Column 1'} 
+           blocks={this.state.blocks} 
+           start={7} 
+           end={19} 
+           height={500}
+           width='20vw'/>
     );
   }
 }
