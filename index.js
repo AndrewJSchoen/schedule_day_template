@@ -13,7 +13,7 @@ class App extends Component {
 
   render() {
     return (
-      <Day blocks={this.state.blocks}/>
+      <Day title={'Monday'} blocks={this.state.blocks}/>
     );
   }
 }
