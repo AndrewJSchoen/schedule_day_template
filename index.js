@@ -8,7 +8,8 @@ class App extends Component {
     super();
     this.state = {
       blocks: [{name:"Item 1",start:7.75,end:8.5},
-               {name:"Item 2",start:8.75,end:9.5}]
+               {name:"Item 2",start:8.75,end:9.5},
+               {name:"Item 3",start:14.75,end:15.75}]
     };
   }
 

@@ -7,7 +7,7 @@ class Day extends React.Component {
   // Day Component
   // Props:
   //  title (string)
-  //  blocks, an object with properties:
+  //  blocks, an array of objects with properties:
   //          - name (string)
   //          - start (float)
   //          - end (float))
@@ -23,7 +23,8 @@ class Day extends React.Component {
       let pxHeight = this.props.height*(blockData.end - blockData.start)/(this.props.end-this.props.start);
       let pxY = this.props.height*(blockData.start-this.props.start)/(this.props.end-this.props.start)
 
-      blockComponents.push(<Card style={{height:pxHeight,
+      blockComponents.push(<Card key={blockData.name} 
+                                 style={{height:pxHeight,
                                          marginTop:pxY,
                                          marginLeft:'1px',
                                          backgroundColor:'#f0f6ff',
